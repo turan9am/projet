@@ -1,0 +1,178 @@
+/*--------------------------------body------------------------------------*/
+
+body{
+	margin: 0%;								/*enleve eventuelle bordure*/
+	padding: 0%;							/*enleve eventuelle bordure*/
+	background-color: #FBFBFB;				/*couleur de la page*/
+}
+
+/*---------------------------------top-------------------------------------*/
+
+#navbar{									/*barre d'onglet*/
+	background-color: #FBFBFB; 				/*couleur du navbar*/
+	top:0;									/*position originale de navbar*/
+	padding-left: 9%;						/*met un padding pour laisser la place au slide*/
+	list-style-type: none;					/*enleve les puces*/
+	overflow: hidden;						/*empeche le texte do sortir de navbar*/
+	display: block;							/*affichage en bloc: concatene avec le div d'en dessous*/ 
+	white-space: nowrap; 					/*empeche le wrap*/
+	transition: top 0.5s;					/*durée de l'animation*/
+	z-index: 940;							/*rajoute de la profondeur */
+	padding-top: 0.5%;
+	/*position: fixed;						*/
+}
+
+#navbar a:not(.navbarimage){				/*les onglets*/
+	color: #7B7A7A;							/*couleur du texte*/
+	text-decoration: none;					/*pas de soulignement*/
+	font-size: 1.9em ;						/*taille du texte*/
+	font-family: 'Poiret One', cursive;		/*police du texte*/
+	padding-right: 5%;						/*espace entre 2 onglets*/
+	padding-left: 9%;						/*espace entre 2 onglets*/
+	text-align: center; 					/*alignement du text*/ 
+}
+
+#navbar a:not(.navbarimage):hover{			/*quand la souris est dessus l'onglet*/
+	color: #8C8A8A;							/*couleur du texte*/
+	font-weight: bold;						/*mettre en gras*/
+}
+
+#navbarlogo img{							/*logo image de navbar*/
+	height: 4vw;							/*4 view window comme hauteur du navbar*/
+	width: auto;							/*ajustement auto de la longueur*/
+	margin-bottom:-0.4vw;					/*enleve l'espace entre l'image et le bord du dessus*/ 
+	margin-top: -0.5vw;						/*enleve l'espace entre l'image et le div entre*/ 
+	/*float:right;*/						/*positionne toujours à droite*/
+}
+/*----------------------------------entre---------------------------------------*/
+
+#entre{
+	background-color: #1C4B84;
+	width: 100%;
+	height: 7%;
+	z-index: 940;
+	transition: top 0.7s;
+	overflow: hidden;
+	display: block;
+	/*position: fixed;*/
+}
+
+#entrefin{
+	display: flex;
+	flex-direction: row;
+	padding-top: 0.9%;
+	padding-bottom: 0.9%;
+	justify-content: flex-end;
+}
+
+.logo img{
+	border: 0;
+	overflow: hidden;
+	width: 45%;
+	height: auto;
+}
+.logo {
+	flex-basis: 5%;
+}
+
+#rech input[type=search]:hover {background-color: #fff;}
+
+#rech input {outline: none;}
+
+#rech input::-webkit-search-decoration,input::-webkit-search-cancel-button {display: none;}
+
+#rech input[type=search]:focus {
+	width: 170px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+
+#rech input[type=search] {
+	width: 40px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+	border: solid 1px #ccc;
+	padding: 3px 10px 9px 32px;
+	border-radius: 10em;
+	transition: all .5s;
+	background: #ededed url(https://www.shareicon.net/data/32x32/2015/08/30/93074_search_512x512.png) no-repeat 1px center;
+}
+
+
+/*--------------------------------slide-----------------------------------------*/
+
+#slide {
+	/*background-color: #333333;*/
+	background-color: #BFBEBE;
+	position:fixed;
+	width: 14%;
+	height: 100%;
+	line-height: 2.6;
+	/*padding-right: 4%;*/
+	box-shadow: -6px 0px 20px 8px black;
+/*	box-shadow: 0px 0px 10px 8px #7B7A7A;*/
+	z-index: 960;
+	top:0;
+	left:-10%;
+	transition: left 0.7s;
+	display: block;
+}
+
+#slide ul {
+	list-style-type:none;
+
+}
+
+#imagecote img{
+	width: 100%;
+	height: auto;
+}
+
+#imagecote {
+	transition: 0.9s;
+}
+
+#slide a{
+	display:block;
+	opacity: 0.0;
+	transition: 0.7s;
+}
+
+
+#slide a:not(#imagecote):not(#adresse2):not(#info){
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+
+#cote span{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+	color: #C1C1C1;
+}
+
+#adresse2{
+	z-index: 950;
+	transition: 0.3s;
+	width: 100px;
+	text-decoration: none;
+	font-size: 1em;
+	color: #C1C1C1;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#info{
+	font-family: 'Charmonman', cursive;
+	text-align: center;
+	color: white;
+	margin-bottom: 30%;
+}
+
+footer{
+	bottom:30px	;
+}
+
