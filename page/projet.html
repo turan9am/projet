@@ -32,7 +32,7 @@
 		<a id="navbarlogo" class="navbarimage" href="../index.html"><img src="https://i.ibb.co/7RsmMQ5/logo.png"></a> 
 		<!-- onglet accueil à contact-->
 		<a id="acceuil" class="navbartabtext" href="../index.html"> Acceuil </a>
-		<a id="projet" class="navbartabtext" href="projet.html#intro"> Projet </a>
+		<a id="projet" class="navbartabtext" href="projet.html#mon_projet"> Projet </a>
 		<a id="cv" class="navbartabtext" href="cv.html"> CV </a>
 		<a id="contact" class="navbartabtext" href="contact.html"> Contact</a>
 	</section>
@@ -82,23 +82,26 @@
 	<section id="projetbiomed">
 		<button onclick="topFunction()" id="gotop_bouton" title="Go to top">^</button>
 		<div id="projet_navbar">
-			<a id="intro_onglet" href="#intro"> Introduction </a>
-			<a id="contexte_onglet" href="#contexte"> Contexte </a>
-			<a id="veine_a_pompe_onglet" href="#veine_a_pompe_1"> Veine à pompe </a>
-			<a class="petit_onglet" id="veine_a_pompe_2_onglet" href="#veine_a_pompe_2"> CEC </a>
-			<a class="petit_onglet" id="veine_a_pompe_3_onglet" href="#veine_a_pompe_3"> ECMO</a>
+			<a id="intro_onglet" href="#mon_projet"> Introduction </a>
+			<a id="contexte_onglet" href="#contexte_titre"> Contexte </a>
+			<a id="veine_a_pompe_onglet" href="#veine_a_pompe_1_titre"> Veine à pompe </a>
+			<a class="petit_onglet" id="veine_a_pompe_2_onglet" href="#veine_a_pompe_2_titre"> CEC </a>
+			<a class="petit_onglet" id="veine_a_pompe_3_onglet" href="#veine_a_pompe_3_titre"> ECMO</a>
 		</div>
 		<div id="titredisparition">
 			<h2>
 				Les systèmes d’oxygénation extra-corporelle
 			</h2>
 		</div>
+		<h3 id="mon_projet" class="intro_titre"> Mon Projet <br></h3>
+
+		<h4 id="intro_titre" class="titre"> 1. Introduction </h4>
 		<div id="intro">
-			<span>1. Introduction</span><br><br>
 			La CEC et l’ECMO sont méconnues du grand public malgré leur histoire relativement ancienne (première CEC durant les années 50) et leur essor ces dernières années. Elles consistent en une dérivation extracorporelle afin de soutenir cœur et poumons. Après une contextualisation, nous étudierons les caractéristiques des pompes à CEC et à ECMO <i>(partie bleue de la figure 1)</i>. Nous verrons ensuite les différentes parties de l’oxygénateur <i>(partie rouge de la figure 1)</i>. Enfin nous étudierons la mise en place et la protection du patient <i>(partie verte de la figure 1)</i>.
 		</div>
-		<div id="contexte" class="contexte">
-			<span>2. Contexte</span><br><br>
+
+		<h4 id="contexte_titre" class="titre"> 2. Contexte </h4>
+		<div id="contexte">
 			La CEC s’effectue lors de chirurgie cardiaque principalement (plus de mille cas par an à la Timone) mais aussi en chirurgie thoracique (pulmonaire...), en chirurgie digestive et en réanimation. La CEC est la création d’un circuit dérivé court-circuitant le cœur ainsi le sang ne passe ni par le cœur ni par les poumons. Le sang est extrait au niveau des veines caves et renvoyé dans l’aorte. Il y a donc cinq objectifs à la CEC : effectuer l’activité ventriculaire et respiratoire, protéger le cœur, réguler la température et éviter les pertes sanguines.<br>
 			L’ECMO est une technique de CEC qui consiste à également offrir une assistance cardiaque et/ou pulmonaire. La différence avec une CEC quelconque est la durée au cours de laquelle le cœur et/ou le poumon du patient est court circuité. En effet, une CEC est une chirurgie de courte durée (maximum 3-4h) tandis que l’ECMO a pour but de tenir plusieurs jours semaines voire des mois. Pour cette raison l’ECMO est moins utilisé (20% d’utilisation annuelle pour l’ECMO contre 80% pour la CEC).<br>
 			Le cœur et/ou le poumon n’étant plus alimenté en sang, ils peuvent se reposer en attendant la guérison.<br> 
@@ -106,20 +109,20 @@
 			La deuxième méthode est l’ECMO veino-artérielle (VA). Elle vise à remplacer les fonctions cardiaques du patient. Dans ce cas, le sang est pris d’une veine et est envoyé dans une artère. Il existe ainsi 3 sous-types de ce type d’oxygénation : l’ECMO fémoro-fémorale <i>(Figure A)</i>, l’ECMO fémoro-artérielle <i>(Figure B)</i> et l’ECMO fémoro-carotidienne <i>(Figure C)</i>.			
 		</div>
 
+		<h4 id="veine_a_pompe_1_titre" class="titre"> 3. De la veine à la pompe </h4>
 		<div id="veine_a_pompe_1" class="veine_a_pompe">
-			<span>3. De la veine à la pompe</span><br><br>
 			Le sang passe dans les tuyaux de la circulation dérivée. Son mouvement est possible grâce à une pompe. Celle-ci diffère selon la durée d’utilisation ainsi la CEC utilise une pompe à galet tandis que l’ECMO emploie une pompe centrifuge.
 		</div>
 
+		<h4 id="veine_a_pompe_2_titre" class="titre"> 3A La CEC </h4>
 		<div id="veine_a_pompe_2" class="veine_a_pompe">
-			<span>3. De la veine à la pompe : la CEC</span><br><br>
 			Le circuit débute une ou des canules posées par les chirurgiens cardiaques dans les veines caves. Il existe différentes canules selon les opérations à effectuer. Elles ont toutes pour but de récupérer l’ensemble du sang veineux. Le sang est extrait du corps par effet de siphonage en plaçant le réservoir en dessous du cœur du patient à environ 60 cm. Le réservoir fait office de tampon lors de la chirurgie. Il contient une alarme de niveau qui arrête la pompe lorsque le niveau sanguin est en-dessous de cette limite évitant l’envoi de bulles d’air dans le système.<br>
 			Dans le circuit extra-corporel, on trouve en premier une pompe qui remplace la fonction ventriculaire. Il existe deux types de pompes : les pompes centrifuges et ceux à galets. Les pompes à l’APHM et dans beaucoup d’hôpitaux sont des pompes à galet (ou péristaltiques) car elles ont un coût moindre que les pompes centrifuges.<br>
 			Elles présentent divers avantages : elles sont occlusives (elles ont l’effet d’un clamp à l’arrêt), elles sont réutilisables et ne sont pas chères, la plage de débits potentiels est importante (0,2 à 7L/min). Elles ont également des défauts : elles détruisent les hématies et les plaquettes en les écrasant (complication lors d’une utilisation prolongée, plus de 6h) & des complications ponctuelles (embolie gazeuse si rupture de tuyaux, occlusion excessive ou à défaut...).
 		</div>
 
+		<h4 id="veine_a_pompe_3_titre" class="titre"> 3B L'ECMO </h4>
 		<div id="veine_a_pompe_3" class="veine_a_pompe">
-			<span>3. De la veine à la pompe : l'ECMO</span><br><br>
 			Contrairement à la pompe à galets la pompe centrifuge est non-occlusive. Elle est basée sur le principe du vortex (voir Figure 3) permettant ainsi d’éviter l’hémolyse à savoir l'écrasement des cellules sanguines. Cependant la pompe étant non-occlusive et le sang s'écoulant des zones de haute pression vers celles de basse pression, le fluide peut suivre le circuit inverse lors de l'arrêt de la pompe. Pour éviter ces reflux il faut un minimum de 1 500 tours/minutes. Les deux inconvénients de la pompe centrifuge sont son prix relativement élevé, à titre de 100€ par tête à usage unique et sa durée de vie qui est inférieur à celle des pompes à galets.<br>
 			Dans ces deux pompes, il existe des systèmes de sécurité en cas de défaillance électrique : batterie interne, manivelle de secours. En CEC, une pompe supplémentaire est incluse sur le banc des pompes.
 		</div>
