@@ -1,0 +1,180 @@
+/*--------------------------------body------------------------------------*/
+
+body{
+	margin: 0%;								/*enleve eventuelle bordure*/
+	padding: 0%;							/*enleve eventuelle bordure*/
+	background-color: #FBFBFB;				/*couleur de la page*/
+}
+
+/*---------------------------------top-------------------------------------*/
+
+#navbar{									/*barre d'onglet*/
+	background-color: #FBFBFB; 				/*couleur du navbar*/
+	top:0;									/*position originale de navbar*/
+	padding-left: 9%;						/*met un padding pour laisser la place au slide*/
+	list-style-type: none;					/*enleve les puces*/
+	overflow: hidden;						/*empeche le texte do sortir de navbar*/
+	display: block;							/*affichage en bloc: concatene avec le div d'en dessous*/ 
+	white-space: nowrap; 					/*empeche le wrap*/
+	transition: top 0.5s;					/*durée de l'animation*/
+	z-index: 940;							/*rajoute de la profondeur */
+	padding-top: 0.5%;
+}
+
+#navbar a:not(.navbarimage){				/*les onglets*/
+	color: #7B7A7A;							/*couleur du texte*/
+	text-decoration: none;					/*pas de soulignement*/
+	font-size: 1.9em ;						/*taille du texte*/
+	font-family: 'Poiret One', cursive;		/*police du texte*/
+	padding-right: 5%;						/*espace entre 2 onglets*/
+	padding-left: 9%;						/*espace entre 2 onglets*/
+	text-align: center; 					/*alignement du text*/ 
+}
+
+#navbar a:not(.navbarimage):hover{			/*quand la souris est dessus l'onglet*/
+	color: #8C8A8A;							/*couleur du texte*/
+	font-weight: bold;						/*mettre en gras*/
+}
+
+#navbarlogo img{							/*logo image de navbar*/
+	height: 4vw;							/*4 view window comme hauteur du navbar*/
+	width: auto;							/*ajustement auto de la longueur*/
+	margin-bottom:-0.5vw;					/*enleve l'espace entre l'image et le bord du dessus*/ 
+	margin-top: -0.5vw;						/*enleve l'espace entre l'image et le div entre*/ 
+	/*float:right;*/						/*positionne toujours à droite*/
+}
+/*----------------------------------entre---------------------------------------*/
+
+#entre{
+	background-color: #1C4B84;				/*couleur du bandeau bleu par défaut*/
+	width: 100%;							/*largeur*/
+	z-index: 940;							/*profondeur égale à celle du navbar*/
+	transition: top 0.7s;					/*durée de l'animation*/
+	overflow: hidden;						/*empeche le texte do sortir de entre*/
+	display: block;							/*affichage en bloc: concatene avec le div d'en dessous*/ 
+}
+
+#entrefin{							
+	display: flex;							/*affichage en flex pour que quand on clique sur la barre de recherche les icones se décale*/
+	flex-direction: row;					/*alignement en ligne*/
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	justify-content: flex-end;				/*aligne les element à la fin cad à droite*/
+}
+
+.logo img{
+	border: 0;								/*enleve eventuelle bordure qui pourrait apparaitre sur certain navigateur*/
+	overflow: hidden;						/*empeche le texte do sortir de ce div*/
+	width: 2.3vw;							/*longueur égale à 2.3 view window de celle du bandeau bleu*/
+	height: auto;				
+}
+.logo {
+	flex-basis: 3.5vw;						/*espace séparant les icones*/
+}
+
+#rech input[type=search] {
+	width: 2.2vw;							/*longueur de la BDR */
+	height: 2.2vw;							/*largeur de la BDR*/
+	color: transparent;						/*arriere plan transparent si texte ecrit*/
+	cursor: pointer;						/*type de curseur pointeur*/
+	border: none;							/*enleve tout bordure*/
+	padding: 0.2vw 0.2vw 0.2vw 0.2vw;		/*padding du texte à l'interieur*/
+	border-radius: 10em;					/*donne forme arrondi*/
+	transition: all .5s;					/*durée de l'animation*/
+	background-color: #ededed;				/*couleur de l'arriere plan*/
+	background-image: url(https://www.arondor.com/previous/images/Logo-gif-anime-bleu-fond-transparent.gif);  		/*gif oeil*/
+	background-size: 2vw 2vw;				/*dimension de l'oeil*/
+	background-repeat: no-repeat ;			/*evite la repetition du gif oeil*/
+	background-position : 1px center;		/*centrage de l'oeil*/
+}
+
+#rech input[type=search]:focus {
+	width: 170px;							/*longueur de la BDR une fois cliqué*/
+	padding-left: 32px;						/*padding une fois cliqué*/
+	color: #000;							/*couleur du texte à l'interieur*/
+	background-color: #fff;					/*couleur du fond une fois cliqué */
+	cursor: auto;							/*type de curseur auto*/
+}
+
+#rech input[type=search]:hover {		
+	background-color: #fff;					/*couleur de la barre de recherche (BDR) lorsque la souris est dessus */
+}  
+
+#rech input {outline: none;}				/*enleve les bordures de selection*/
+
+/*--------------------------------slide-----------------------------------------*/
+
+#slide {
+	background-color: #333333;				/*couleur AP (arriere plan) du slide à gauche*/
+	position:fixed;							/*position fixe pour eviter le déplacement lors du scrolling*/
+	width: 14%;
+	height: 100%;
+	line-height: 2.6;						/*espace entre les lignes de texte*/
+	box-shadow: -6px 0px 20px 8px black;	/*propriete de l'ombrage*/
+	z-index: 960;							/*profondeur plus eleve pour qu'il reste au deesus des autre elements*/
+	top:0;									/*re initialise le margin à 0 par rapport au dessus*/
+	left:-10%;								/*position de départ avant le décalage à droite */
+	transition: left 0.7s;					/*durée de l'animation*/
+	display: block;							/*display en block*/
+}
+
+#image_slide_haut img{								/*propriete de l'image du slide*/
+	width: 100%;
+	height: auto;
+}
+
+#info{											
+	font-family: 'Charmonman', cursive;
+	text-align: center;						/*alignement du texte*/
+	color: white;
+	margin-bottom: 30%;						/*margin pour espacer les infos en dessous */
+}
+
+#slide ul {
+	list-style-type:none;					/*enleve les puces*/
+}
+
+#slide a{
+	display:block;							/*affichage en block */
+	opacity: 0.0;							/*opacity avant le sliding*/
+	transition: 0.7s;						/*durée de l'animation pour opaficier*/
+}
+
+#slide a:not(#image_slide_haut):not(#info){ 		/*propriete du texte (excepté l'info l'image)*/
+	font-family:'Josefin Sans',sans-serif;				
+	text-align: center;						
+	font-size: 1em;							
+	color: white;						
+}
+
+#slide span{								/*propriete du span*/		
+	font-family: 'Josefin Sans', sans-serif;	
+	font-size: 1em;
+	color: #C1C1C1;
+}
+
+#image_slide_bas img{								/*propriete de l'image du slide*/
+	width: 100%;
+	height: auto;
+	margin-top: 50%;
+}
+
+/*-------------------------------footer------------------------------------------------*/
+
+footer{
+	text-align: center;
+	animation: 1.2s ease-in-out 0s 1 dessusbas;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #7B7A7A;
+}
+
+@keyframes dessusbas {
+    0% {
+        transform: translateY(50%);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
